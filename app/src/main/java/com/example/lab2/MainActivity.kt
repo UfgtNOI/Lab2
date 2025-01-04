@@ -24,14 +24,15 @@ class MainActivity : AppCompatActivity() {
             val input = inputField.text.toString()
 
             val n = input.toInt()
-            var s: Double = 1.00
-            var f: Double = 2.00
 
-            for (i in 2..n){
-                s = s + 1/f
-                f *= (n - i).toDouble()
+            var sum = 0.0
+            var factorial = 1.0
+
+            for (i in 1..n) {
+                factorial *= i //
+                sum += 1.0 / factorial //
             }
-            resultText.text = "$s"
+            resultText.text = "$sum"
         }
     }
 }
