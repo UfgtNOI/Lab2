@@ -20,7 +20,7 @@
             android:id="@+id/inputField"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Введите число n"
+            android:hint="Введите целое число n"
             android:inputType="text"
             android:maxLines="1"
             android:ems="10"

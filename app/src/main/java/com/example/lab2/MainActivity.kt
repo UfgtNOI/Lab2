@@ -25,6 +25,11 @@ class MainActivity : AppCompatActivity() {
 
             val n = input.toInt()
 
+            if (n <= 0) {
+                resultText.text = "Введите положительное число"
+                return@setOnClickListener
+            }
+
             var sum = 0.0
             var factorial = 1.0
 
